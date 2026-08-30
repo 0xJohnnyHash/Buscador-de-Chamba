@@ -580,8 +580,9 @@ body{position:relative;isolation:isolate}
 #fx-scan{opacity:.05;background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--primary) 90%,transparent),transparent);
   height:220px;top:-220px;animation:scanmove 7s linear infinite}
 @keyframes scanmove{from{transform:translateY(0)}to{transform:translateY(calc(100vh + 220px))}}
-/* La barra lateral y las tarjetas van sobre el fondo (surface sólido) */
-.sidebar,.card,.topbar{position:relative}
+/* Las tarjetas y la barra superior van sobre el fondo animado.
+   OJO: NO tocar la posición de .sidebar (debe seguir fixed). */
+.card,.topbar{position:relative}
 body.compact #fx-galaxy::before,body.compact #fx-galaxy::after,body.compact #fx-scan{animation:none}
 @media (prefers-reduced-motion: reduce){ #fx-galaxy::before,#fx-galaxy::after,#fx-scan,#fx-galaxy .stars{animation:none}}
 

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Vacantes+ · Autorrelleno asistido",
+  "version": "1.0.0",
+  "description": "Rellena tus datos básicos en formularios de empleo. Tú revisas y envías. No guarda contraseñas ni envía nada por ti.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Vacantes+ Autorrelleno"
+  }
+}

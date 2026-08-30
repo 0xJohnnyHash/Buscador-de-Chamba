@@ -1,0 +1,18 @@
+FAVICON PERSONALIZADO — Buscador de Chamba
+==========================================
+
+El icono que aparece en la pestaña del navegador se toma de esta carpeta.
+
+CÓMO CAMBIARLO:
+  Coloca aquí tu propio archivo con UNO de estos nombres (en este orden de
+  prioridad): favicon.ico, favicon.png o favicon.svg.
+
+  - Recomendado: un PNG cuadrado de 64x64 o 128x128 px llamado "favicon.png".
+  - Si pones favicon.png o favicon.ico, se usará automáticamente.
+  - La app ya trae un "favicon.svg" de ejemplo; puedes borrarlo o reemplazarlo.
+
+Después de cambiarlo, recarga la página con Ctrl+F5 para ver el nuevo icono.
+
+Cualquier archivo que pongas en esta carpeta "static/" se sirve en
+  http://127.0.0.1:5000/static/EL_NOMBRE_DEL_ARCHIVO
+por si quieres añadir tu logo u otras imágenes a la app.

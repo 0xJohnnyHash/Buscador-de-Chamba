@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  body{font-family:'Segoe UI',system-ui,sans-serif;width:320px;margin:0;padding:14px;
+    background:#0b1120;color:#e6edf6;font-size:13px}
+  h1{font-size:15px;margin:0 0 2px;display:flex;align-items:center;gap:6px}
+  .sub{color:#94a3b8;font-size:11px;margin-bottom:12px}
+  label{display:block;font-size:11px;color:#94a3b8;font-weight:600;margin:8px 0 3px}
+  input,textarea{width:100%;box-sizing:border-box;padding:7px 9px;border:1px solid #26344c;
+    border-radius:7px;background:#0f1a2e;color:#e6edf6;font-size:13px;font-family:inherit}
+  textarea{resize:vertical;min-height:54px}
+  .row{display:flex;gap:8px}.row>div{flex:1}
+  button{width:100%;margin-top:12px;padding:9px;border:none;border-radius:8px;font-weight:600;
+    cursor:pointer;font-size:13px}
+  .fill{background:linear-gradient(135deg,#4f46e5,#6366f1);color:#fff}
+  .save{background:#1c2740;color:#e6edf6;margin-top:8px}
+  .msg{font-size:11px;color:#34d399;margin-top:8px;min-height:14px;text-align:center}
+  .note{font-size:10px;color:#64748b;margin-top:10px;line-height:1.4}
+</style>
+</head>
+<body>
+  <h1>🎯 Vacantes+ <span style="color:#6366f1">Autorrelleno</span></h1>
+  <div class="sub">Rellena tus datos en el formulario abierto. Revisa siempre antes de enviar.</div>
+
+  <div class="row">
+    <div><label>Nombre</label><input id="nombre" placeholder="Jonathan"></div>
+    <div><label>Apellido</label><input id="apellido" placeholder="Rojas"></div>
+  </div>
+  <label>Email</label><input id="email" placeholder="tucorreo@ejemplo.com">
+  <div class="row">
+    <div><label>Teléfono</label><input id="telefono" placeholder="+58 ..."></div>
+    <div><label>Ciudad</label><input id="ciudad" placeholder="Caracas"></div>
+  </div>
+  <label>LinkedIn / Web</label><input id="linkedin" placeholder="linkedin.com/in/0xJohnnyHash">
+  <label>Mensaje / carta (se pega en campos de texto largos)</label>
+  <textarea id="mensaje" placeholder="Pega aquí tu carta o mensaje generado en la app…"></textarea>
+
+  <button class="fill" id="btn-fill">✍️ Rellenar formulario</button>
+  <button class="save" id="btn-save">💾 Guardar mis datos</button>
+  <div class="msg" id="msg"></div>
+  <div class="note">v1: rellena los campos más comunes (nombre, email, teléfono, ciudad, LinkedIn y áreas de texto largas). Los formularios varían mucho entre sitios, así que revisa y completa lo que falte antes de enviar. No guarda contraseñas ni envía nada automáticamente.</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# Datos locales (NO subir a GitHub)
+vacantes.db
+vacantes.db-shm
+vacantes.db-wal
+users.txt
+.secret
+cv_generados/*
+cv_originales/*
+avatars/*
+!cv_generados/.gitkeep
+!cv_originales/.gitkeep
+!avatars/.gitkeep
+
+# Favicons personalizados subidos por el usuario (se conserva el de ejemplo)
+static/favicon.png
+static/favicon.ico
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log

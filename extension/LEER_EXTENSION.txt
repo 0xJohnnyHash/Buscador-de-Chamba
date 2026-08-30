@@ -1,0 +1,25 @@
+EXTENSIÓN "Vacantes+ Autorrelleno asistido" (Chrome / Edge / Brave)
+===================================================================
+
+Rellena tus datos básicos en los formularios de postulación para que solo
+tengas que revisar y pulsar Enviar. NO guarda contraseñas ni envía nada por ti.
+
+CÓMO INSTALARLA (modo desarrollador, no necesita tienda):
+1. Abre chrome://extensions (o edge://extensions, brave://extensions).
+2. Activa arriba a la derecha "Modo de desarrollador".
+3. Pulsa "Cargar descomprimida" y selecciona esta carpeta (extension/).
+4. Aparecerá el icono de la extensión en la barra. Fíjala si quieres.
+
+CÓMO USARLA:
+1. Abre el formulario de postulación de la vacante (en tu navegador, logueado).
+2. Haz clic en el icono de la extensión.
+3. Rellena tus datos una vez y pulsa "Guardar mis datos" (se recuerdan).
+4. Pega en "Mensaje / carta" el texto que generó la app (ya lo copia al
+   portapapeles al usar "Aplicar asistido").
+5. Pulsa "Rellenar formulario": completará los campos comunes de la página.
+6. REVISA todo, corrige lo que falte y pulsa Enviar tú mismo.
+
+NOTA: es una v1. Los formularios de empleo varían muchísimo entre sitios, así
+que rellena los campos habituales (nombre, apellido, email, teléfono, ciudad,
+LinkedIn y áreas de texto largas) y deja el resto para que lo revises tú. No
+sobrescribe campos que ya tengan texto.

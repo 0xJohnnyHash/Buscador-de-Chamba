@@ -1,0 +1,57 @@
+BUSCADOR DE CHAMBA  —  App web local multiusuario (por 0xJohnnyHash & D4NEST)
+============================================================================
+
+1) Instala dependencias (una vez):
+       pip install -r requirements.txt
+
+2) Arranca:
+       python app.py
+   Se abre solo en http://127.0.0.1:5000
+
+3) Primer uso:
+   - Pulsa "Registrarse", crea tu usuario y contraseña.
+     (Los usuarios se guardan en users.txt con la contraseña protegida
+      por hash — no en texto plano.)
+   - Sube tu CV en "Mi CV": el programa aprende tu área y enfoca los
+     mensajes y el scoring a tu perfil.
+   - En "Ajustes" ajusta tu perfil, el intervalo, el umbral de match y,
+     si quieres, tu diccionario de habilidades.
+   - En "Búsquedas" guarda tus búsquedas (palabra clave + país + ciudad).
+   - En el "Panel" activa el escaneo automático o pulsa "Escanear ahora".
+
+QUÉ HACE:
+- Cada usuario tiene sus propios datos (CV, búsquedas, vacantes, alertas,
+  contactos): todo aislado por login.
+- La puntuación del CV se calcula AUTOMÁTICAMENTE al abrir cada vacante.
+- El escaneo en segundo plano avisa (notificación de escritorio) cuando una
+  vacante supera tu umbral de match.
+- Genera un CV optimizado para ATS (.docx) con tus keywords.
+- "Aplicar rápido" abre la vacante y copia el mensaje al portapapeles.
+- Gráfico de vacantes/coincidencias por día en el Panel.
+
+ARCHIVOS DE DATOS (se crean solos en esta carpeta):
+  vacantes.db  = base de datos      users.txt = usuarios
+  .secret      = clave de sesión    cv_generados/ = CVs .docx generados
+
+NOTA: el escaneo usa el endpoint público de LinkedIn desde tu equipo; úsalo
+con moderación. El CV ATS conserva tu contenido y añade competencias con las
+keywords: revísalo y no incluyas nada que no sea cierto.
+
+CV OPTIMIZADO (IMPORTANTE):
+- Sube tu CV en formato .docx (Word) para que el CV optimizado conserve tu
+  formato exacto y el mismo número de hojas: el programa edita tu documento
+  e inserta solo las keywords que faltan en tu sección de habilidades.
+- Si subes PDF o TXT no se puede preservar el diseño; se genera un documento
+  nuevo reconstruido.
+- Al generar el CV, la app te muestra el score del CV original vs el generado.
+
+NOVEDADES:
+- Autoaplicar (Easy Apply): un clic prepara el CV optimizado + el mensaje y
+  abre la vacante. El mensaje queda copiado al portapapeles.
+- Historial de CVs generados: se guardan por vacante (pestaña Mi CV) para no
+  regenerarlos.
+- Filtro de empresas pequeñas (estimado por nº de publicaciones vistas de la
+  empresa) en la pestaña Vacantes.
+- Notificaciones por correo (Ajustes): SMTP. Con Gmail usa una "contraseña de
+  aplicacion" (Google -> Seguridad -> Contrasenas de aplicaciones), no tu clave
+  normal. Pulsa "Enviar correo de prueba" para comprobarlo.

@@ -1,0 +1,10 @@
+# Obligatorias
+flask>=3.0
+requests>=2.28
+beautifulsoup4>=4.11
+python-docx>=0.8.11
+
+# Recomendadas
+plyer>=2.1          # notificaciones de escritorio (alertas)
+pypdf>=3.0          # leer CV en PDF
+openpyxl>=3.0       # exportar el historial a Excel (.xlsx)
